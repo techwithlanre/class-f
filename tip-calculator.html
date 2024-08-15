@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+    <script>
+        let billAmount = "10000";
+        let tipPercentage = 0.1;
+        let numOfPersons = 1;
+        let tipAmount = Number(billAmount) * tipPercentage;
+
+        console.log(tipAmount);
+
+        let totalBill = Number(billAmount) + tipAmount;
+
+        console.log(totalBill);
+
+        let amountPerPerson = totalBill / numOfPersons;
+        let amountPerPersonWithoutTip = billAmount / numOfPersons;
+
+        console.log(amountPerPerson);
+        console.log(amountPerPersonWithoutTip);
+
+
+
+    </script>
+</body>
+</html>
