@@ -5,6 +5,8 @@
     <title>Functions</title>
 </head>
 <body>
+
+    <button id="button">Click Me</button>
     
     <script>
         //Functions
@@ -25,17 +27,92 @@
         function subtract(num1, num2, num3) {   
             let result = num1 - num2 - num3;
             return result;
-            console.log("Jamiu"); // this will not run because it's afet a return statement
+            //console.log("Jamiu"); // this will not run because it's afet a return statement
         }
 
-        console.log(subtract(10, 13, 5));
+        (function () {
+                return alert("I'm a function, and I'm anonymous!")
+        })                          
+
+        //console.log(subtract(10, 13, 5));
 
 
 
-        let count = 1;
-        let fruit = "Orange";
 
-        2, "2 Oranges"
+        /* function result (num1, num2) {
+            let result = num1 + num2
+            return result
+        } */
+
+        "jamiu@gmail.com"
+        "efe@gmail.com"
+        "jamiu@yahoo.com"
+
+
+        function extractUserName(email) {
+
+        }
+
+        function checkExistingUsername(username) {
+
+        }
+
+
+        function generateTwitterHandle() {
+            let userName = "jamiu1";
+            let usernameExists = true;
+            if (usernameExists == true) {
+                newUsername = userName + "1";
+            } else {
+                newUsername = userName;
+            }
+
+            return newUsername;
+        }
+
+
+        /* 
+            1.  extract username from email
+            2.  check if username feom step 1 exists // jamiu1
+            3.  if username exists, add 1 to the username
+            4. if username does not exist, accept the generated username is step 1
+        */
+
+
+        console.log(generateTwitterHandle());
+
+
+
+
+    function pluralize(count, fruit) {
+        let result;
+        let suffix;
+        let lastCharacter = fruit.slice(-1);
+
+        if(lastCharacter == 'y') {
+            suffix = "ies";
+        } else {
+            suffix = "s";
+        }
+
+        if (count > 1) {
+            result = count + " " + fruit + suffix;
+        } else {
+            result = count + " " + fruit;
+        }
+
+        return result;
+    }
+
+
+    console.log(pluralize(2, "Berry"));
+
+
+
+    //let myFruit = "Orange";
+    //console.log(myFruit.slice(-2));
+    
+    
         
     </script>
 </body>
