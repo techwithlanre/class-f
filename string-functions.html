@@ -9,7 +9,9 @@
 
     <script>
         let school = "Unilorin";
-        //school = school.trim()
+
+        //trim : // removes white spaces from both start and end of a string
+        //school = school.trim() 
         //school = school.trimStart()
         //school = school.trimEnd()
         // console.log(school.length);
@@ -21,7 +23,31 @@
         console.log(school.substring(0, 2)); //same as chatAt
         console.log(school.substring(0)); //same as chatAt
         console.log(school.slice(0)); //same as chatAt
-                
+        console.log(school.substr(1, 2)); //same as chatAt
+
+        let text = "Hello world, welcome to the universe.";
+        const myArray = text.split("|");
+        console.log(myArray);
+
+
+        let result = text.startsWith("0");
+        let endWith = text.endsWith();
+
+        function customStartsWith(subject, stringToCheck) {
+            let firstLetter = text[0];
+            if(firstLetter == stringToCheck) return true;
+            return false;
+        }
+
+        console.log(customStartsWith(text, "H"));
+
+        let text2 = "I love cats. Cats are very easy to love. Cats are very popular."
+        const match = text2.match("Cats");
+        const iterator = text2.matchAll("Cats");
+        const includes = text2.includes('love');
+        console.log("Includes: ", includes); 
+        
+        
         
     </script>
 </body>

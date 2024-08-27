@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Functions</title>
+</head>
+<body>
+    
+    <script>
+        /* Length */
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let size = fruits.length;
+        console.log(size);
+
+        /* Push */
+        fruits.push("Almond");
+        console.log(fruits);
+
+         /* Pop */
+         fruits.pop();
+        console.log(fruits);
+
+         /* toStrin(g) */
+        console.log(fruits.toString().length);
+
+        /* at  */
+
+        console.log(fruits.at(3));
+        console.log(fruits[3]);
+
+
+        /* join() */
+
+        console.log(fruits.join(",.... "));
+
+        /* shift() */
+        console.log(fruits.shift());
+        console.log(fruits[0]);
+
+        /* unshift */
+        fruits.unshift('Lemon');
+        console.log(fruits);
+
+        fruits[0] = "Orange";
+        fruits[1] = "Lemon";
+        
+        
+
+        delete fruits[2]
+        fruits[2] = "Almond";
+
+        console.log(fruits);
+        console.log(fruits);
+        console.log(fruits[2]);
+
+        /* concat() */
+
+        const myGirls = [1, "Lone", "Linus"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+
+        const myChildren = myGirls.concat(myBoys);
+
+        console.log(myChildren);
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>
