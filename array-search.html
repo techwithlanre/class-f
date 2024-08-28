@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Search</title>
+</head>
+<body>
+    
+
+    <script>
+        /* indexOf() */
+
+        /* Check this later */
+        const fruits = ["Apple", "Orange", "Apple", "Mango"];
+        let index = fruits.indexOf("Apple", 5);
+        let lastIndex = fruits.lastIndexOf("Apple", 1);
+
+        console.log("indexOf():", index);
+        console.log("lastIndexOf():", lastIndex);
+
+
+        /* includes() */
+
+        console.log(fruits.includes("Lemon"));
+        console.log(fruits.includes("Lemon", "Apple")); // respects only first parameter
+
+        const numbers = [4, 9, 16, 25, 29];
+
+
+        //get numbers greater than 18
+        let first = numbers.find(greaterThan18);
+        let firstIndex = numbers.findIndex(greaterThan18);
+
+        function greaterThan18(value, index, array) {    
+            return value > 18;
+        }
+
+    
+
+
+        console.log(first);
+        console.log(firstIndex);
+        
+        
+        
+    </script>
+</body>
+</html>

@@ -62,6 +62,39 @@
 
         console.log(myChildren);
         
+
+        const myArr = [
+            [1,2, [7,8]],
+            [3,4, [9,10]],
+            [5,6]
+        ];
+
+        /* Flat */
+        const newArr = myArr.flat();
+        console.log(myArr[0].flat());
+
+
+        /* splice: to add new element to array */ 
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits2.splice(2, 0, "Lemon", "Kiwi");
+        console.log(fruits2);
+        console.log(fruits2[4]);
+
+
+
+        /* splice(): to remove elements from an array */
+
+        const modifiedArray = fruits2.toSpliced(0,1, 'Dates')
+        console.log(modifiedArray);
+
+        const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+        const citrus = fruits3.slice(1, 3);
+        console.log(citrus);
+        
+        
+        
+        
+        
         
         
         
